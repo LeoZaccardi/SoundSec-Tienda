@@ -1,0 +1,110 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.8), 
+        rgba(0, 0, 0, 0.8)
+    ),
+    url('../imagenes/imagen-principal.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    min-height: 100vh;
+}
+
+.card {
+    background-color: #1f1f1f;
+    border: 1px solid #ffc107;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    border-radius: 8px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(255, 193, 7, 0.5);
+}
+
+.card-title {
+    color: #ffc107;
+}
+
+.card-text {
+    color: #ccc;
+}
+
+.card-img-top {
+    height: 180px;
+    object-fit: contain;
+    background-color: #fff;
+    padding: 10px;
+    border-bottom: 1px solid #ffc107;
+    border-radius: 6px 6px 0 0;
+}
+
+#toast {
+    box-shadow: 0 0 10px #000;
+    font-weight: bold;
+    background-color: #212529 !important;
+    color: #ffc107 !important;
+    border-left: 5px solid #ffc107;
+}
+
+/* Carrito */
+#offcanvasCarrito ul li {
+    background-color: #2a2a2a;
+    border: 1px solid #ffc107;
+    border-radius: 6px;
+    padding: 12px;
+    color: #fff;
+}
+
+#offcanvasCarrito ul li button {
+    margin-left: 5px;
+    font-size: 0.9rem;
+}
+#offcanvasCarrito .btn-group .btn {
+    font-size: 0.8rem;
+    padding: 4px 8px;
+}
+#offcanvasCarrito .bi {
+    vertical-align: middle;
+}
+#offcanvasCarrito p {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Animación contador carrito */
+.flash {
+    animation: flash-scale 0.3s ease-in-out;
+}
+@keyframes flash-scale {
+  0% {
+        transform: scale(1);
+        background-color: #dc3545;
+    }
+  50% {
+        transform: scale(1.4);
+        background-color: #ffc107;
+    }
+  100% {
+        transform: scale(1);
+        background-color: #dc3545;
+    }
+}
+
+/* Galería de imágenes */
+#contenedor-imagenes img {
+    border: 2px solid #ffc107;
+    padding: 4px;
+    margin: 6px;
+    background-color: #1a1a1a;
+    transition: transform 0.3s ease;
+    max-width: 100%;
+    height: auto;
+}
+
+#contenedor-imagenes img:hover {
+    transform: scale(1.05);
+    border-color: #ffdd57;
+}
