@@ -1,5 +1,9 @@
 import { mostrarToast } from "../utils/toast.js";
-
+const formatoMoneda = new Intl.NumberFormat("es-AR", {
+    style: "currency",
+    currency: "ARS",
+    minimumFractionDigits: 0,
+});
 export function renderProductos(productos, listaProductos, callbackAgregar, callbackGaleria) {
     listaProductos.innerHTML = "";
     productos.forEach(prod => {
@@ -26,7 +30,7 @@ export function renderProductos(productos, listaProductos, callbackAgregar, call
 
         const precio = document.createElement("p");
         precio.className = "card-text";
-        precio.textContent = `$${prod.precio}`;
+        precio.textContent = formatoMoneda.format(prod.precio);
 
         const btn = document.createElement("button");
         btn.className = "btn btn-outline-warning mt-2";
