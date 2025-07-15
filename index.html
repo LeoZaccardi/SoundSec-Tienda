@@ -32,6 +32,20 @@
     <main class="container my-5">
         <section id="productos">
             <h2 class="mb-3">Productos</h2>
+            <!-- Filtro -->
+            <div class="mb-4 d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
+                <select id="filtroCategoria" class="form-select bg-dark text-warning border-warning w-100 w-md-auto">
+                    <option value="todos">Todas las categorías</option>
+                    <option value="Altavoces">Altavoces</option>
+                    <option value="Amplificadores">Amplificadores</option>
+                    <option value="Auriculares In-Ear">Auriculares In-Ear</option>
+                    <option value="Auriculares Over-Ear">Auriculares Over-Ear</option>
+                    <option value="DAC">DAC</option>
+                    <option value="Parlantes Portatiles">Parlantes Portatiles</option>
+                </select>
+
+                <input type="text" id="buscadorNombre" class="form-control bg-dark text-warning border-warning w-100 w-md-50" placeholder="Buscar por nombre...">
+            </div>
             <div id="lista-productos" class="row g-4"></div>
         </section>
     </main>
@@ -100,6 +114,13 @@
                             <label for="email" class="form-label">Correo electrónico</label>
                             <input type="email" class="form-control" id="email" required>
                             <div class="invalid-feedback">Ingrese un email válido.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="pais" class="form-label">País</label>
+                            <select class="form-select" id="pais" required>
+                                <option value="">Seleccionar país</option>
+                            </select>
+                            <div class="invalid-feedback">Seleccione un país válido.</div>
                         </div>
                         <div class="mb-3">
                             <label for="direccion" class="form-label">Dirección de envío</label>

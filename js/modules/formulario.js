@@ -23,10 +23,11 @@ export function configurarFormulario() {
         const email = document.getElementById("email");
         const direccion = document.getElementById("direccion");
         const telefono = document.getElementById("telefono");
+        const pais = document.getElementById("pais");
 
         let valido = true;
 
-        [nombre, email, direccion, telefono].forEach(input => {
+        [nombre, email, direccion, telefono, pais].forEach(input => {
             if (!input.checkValidity()) {
                 input.classList.add("is-invalid");
                 valido = false;
@@ -36,7 +37,7 @@ export function configurarFormulario() {
         });
 
         if (valido) {
-            guardarDatosFormulario({ nombre: nombre.value, email: email.value, direccion: direccion.value, telefono: telefono.value });
+            guardarDatosFormulario({ nombre: nombre.value, email: email.value, direccion: direccion.value, telefono: telefono.value, pais: pais.value });
             mostrarToast("¡Compra confirmada!", "success");
             vaciarCarrito();
             actualizarCarritoUI();
@@ -44,6 +45,27 @@ export function configurarFormulario() {
             form.reset();
         }
     });
+}
+export async function cargarPaises() {
+    try {
+        const res = await fetch("https://restcountries.com/v3.1/all?fields=name");
+        const paises = await res.json();
+
+        const selectPais = document.getElementById("pais");
+        const nombresOrdenados = paises
+            .map(p => p.name.common)
+            .sort((a, b) => a.localeCompare(b));
+
+        nombresOrdenados.forEach(nombre => {
+            const option = document.createElement("option");
+            option.value = nombre;
+            option.textContent = nombre;
+            selectPais.appendChild(option);
+        });
+
+    } catch (error) {
+        console.error("Error al cargar países:", error);
+    }
 }
 
 function precargarFormulario() {
@@ -54,6 +76,7 @@ function precargarFormulario() {
     document.getElementById("email").value = datos.email || "";
     document.getElementById("direccion").value = datos.direccion || "";
     document.getElementById("telefono").value = datos.telefono || "";
+    document.getElementById("pais").value = datos.pais || "";
 }
 
 function guardarDatosFormulario(data) {
