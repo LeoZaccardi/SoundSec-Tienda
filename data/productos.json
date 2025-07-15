@@ -1,0 +1,194 @@
+[
+    { 
+        "id": 1, 
+        "nombre": "Columna 300", 
+        "precio": 1500000 ,
+        "categoria": "Altavoces", 
+        "imagen":[
+            "./imagenes/productos/altavoces/1/columna-300-1.webp",
+            "./imagenes/productos/altavoces/1/columna-300-2.webp",
+            "./imagenes/productos/altavoces/1/columna-300-3.webp"
+
+        ]
+    },
+    { 
+        "id": 2, 
+        "nombre": "Fluance Rt83", 
+        "precio": 1300000,
+        "categoria":"Altavoces",
+        "imagen":[
+            "./imagenes/productos/altavoces/2/fluance-rt83-1.webp",
+            "./imagenes/productos/altavoces/2/fluance-rt83-2.webp",
+            "./imagenes/productos/altavoces/2/fluance-rt83-3.webp"
+        ] 
+    },
+    { 
+        "id": 3, 
+        "nombre": "Edifier S2000MKII", 
+        "precio": 1230000 ,
+        "categoria": "Altavoces",
+        "imagen":[
+            "./imagenes/productos/altavoces/3/edifier-s2000mkii-1.webp",
+            "./imagenes/productos/altavoces/3/edifier-s2000mkii-2.webp",
+            "./imagenes/productos/altavoces/3/edifier-s2000mkii-3.webp",
+            "./imagenes/productos/altavoces/3/edifier-s2000mkii-4.webp"
+        ]
+    },
+    {
+        "id": 4,
+        "nombre": "Ayon Triron",
+        "precio": 2983000,
+        "categoria": "Amplificadores",
+        "imagen":[
+            "./imagenes/productos/amplificadores/1/ayon-triton-1.webp",
+            "./imagenes/productos/amplificadores/1/ayon-triton-2.webp"
+        ]
+    },
+    {
+        "id": 5,
+        "nombre": "Triode Corp",
+        "precio": 2387900,
+        "categoria": "Amplificadores",
+        "imagen":[
+            "./imagenes/productos/amplificadores/2/triode-corp.webp"
+        ]
+    },
+    {
+        "id": 6,
+        "nombre": "Atma Sphere",
+        "precio": 1786734,
+        "categoria": "Amplificadores",
+        "imagen":[
+            "./imagenes/productos/amplificadores/3/atma-sphere.webp"
+        ]
+    },
+    {
+        "id":7,
+        "nombre": "Senheiser 900",
+        "precio": 3299800,
+        "categoria": "Auriculares In-Ear",
+        "imagen":[
+            "./imagenes/productos/Auriculares in-ear/1/senheiser-900-1.webp",
+            "./imagenes/productos/Auriculares in-ear/1/senheiser-900-2.webp",
+            "./imagenes/productos/Auriculares in-ear/1/senheiser-900-3.webp"
+        ]
+    },
+    {
+        "id":8,
+        "nombre": "Samsung Galaxy Buds Pro",
+        "precio": 1129880,
+        "categoria": "Auriculares In-Ear",
+        "imagen":[
+            "./imagenes/productos/Auriculares in-ear/2/galaxy-buds-pro-1.webp",
+            "./imagenes/productos/Auriculares in-ear/2/galaxy-buds-pro-2.webp",
+            "./imagenes/productos/Auriculares in-ear/2/galaxy-buds-pro-3.webp",
+            "./imagenes/productos/Auriculares in-ear/2/galaxy-buds-pro-4.webp",
+            "./imagenes/productos/Auriculares in-ear/2/galaxy-buds-pro-5.webp"
+        ]
+    },
+    {
+        "id": 9,
+        "nombre": "Sony Wf-1000XM5",
+        "precio": 850980,
+        "categoria": "Auriculares In-Ear",
+        "imagen":[
+            "./imagenes/productos/Auriculares in-ear/3/sony-wf1000xm5-1.webp",
+            "./imagenes/productos/Auriculares in-ear/3/sony-wf1000xm5-2.webp",
+            "./imagenes/productos/Auriculares in-ear/3/sony-wf1000xm5-3.webp"
+        ]
+    },
+    {
+        "id": 10,
+        "nombre": "Focal Stellia",
+        "precio": 1232765,
+        "categoria": "Auriculares Over-Ear",
+        "imagen":[
+            "./imagenes/productos/Auriculares over-ear/1/focal-stellia-1.webp",
+            "./imagenes/productos/Auriculares over-ear/1/focal-stellia-2.webp",
+            "./imagenes/productos/Auriculares over-ear/1/focal-stellia-3.webp",
+            "./imagenes/productos/Auriculares over-ear/1/focal-stellia-4.webp"
+        ]
+    },
+    {
+        "id": 11,
+        "nombre": "Senheiser HD-820",
+        "precio": 1009280,
+        "categoria": "Auriculares Over-Ear",
+        "imagen":[
+            "./imagenes/productos/Auriculares over-ear/2/senheiser-hd820-1.webp",
+            "./imagenes/productos/Auriculares over-ear/2/senheiser-hd820-2.webp",
+            "./imagenes/productos/Auriculares over-ear/2/senheiser-hd820-3.webp"
+        ]
+    },
+    {
+        "id": 12,
+        "nombre": "Bose Quiet Comfort",
+        "precio": 987630,
+        "categoria": "Auriculares Over-Ear",
+        "imagen":[
+            "./imagenes/productos/Auriculares over-ear/3/bose-quietcomfort-1.webp",
+            "./imagenes/productos/Auriculares over-ear/3/bose-quietcomfort-2.webp",
+            "./imagenes/productos/Auriculares over-ear/3/bose-quietcomfort-3.webp",
+            "./imagenes/productos/Auriculares over-ear/3/bose-quietcomfort-4.webp"
+        ]
+    },
+    {
+        "id": 13,
+        "nombre": "Krell K-300i",
+        "precio": 3465000,
+        "categoria":"DAC",
+        "imagen":[
+            "./imagenes/productos/dacs/1/krell-k300i-1.webp",
+            "./imagenes/productos/dacs/1/krell-k300i-2.webp"
+        ]
+    },
+    {
+        "id": 14,
+        "nombre": "Mcintosh D-1100",
+        "precio": 2530020,
+        "categoria":"DAC",
+        "imagen":[
+            "./imagenes/productos/dacs/2/mcintosh-d1100-1.webp",
+            "./imagenes/productos/dacs/2/mcintosh-d1100-2.webp"
+        ]
+    },
+    {
+        "id":15,
+        "nombre": "Sda 1 Streamer",
+        "precio": 765000,
+        "categoria": "DAC",
+        "imagen":[
+            "./imagenes/productos/dacs/3/sda1-streamer-1.webp",
+            "./imagenes/productos/dacs/3/sda1-streamer-2.webp"
+        ]
+    },
+    {
+        "id":16,
+        "nombre": "JBL Party Box Ultimate",
+        "precio": 3850000,
+        "categoria": "Parlantes Portatiles",
+        "imagen":[
+            "./imagenes/productos/parlantes portatiles/1/jbl-partybox-ultimate-1.webp"
+        ]
+    },
+    {
+        "id":17,
+        "nombre": "Sony Tower Ultra ",
+        "precio": 2650000,
+        "categoria": "Parlantes Portatiles",
+        "imagen":[
+            "./imagenes/productos/parlantes portatiles/2/sony-ultra-1.webp",
+            "./imagenes/productos/parlantes portatiles/2/sony-ultra-2.webp"
+        ]
+    },
+    {
+        "id":18,
+        "nombre": "JBL Party Box 710",
+        "precio": 1230004,
+        "categoria": "Parlantes Portatiles",
+        "imagen":[
+            "./imagenes/productos/parlantes portatiles/3/jbl-partybox-710-1.webp",
+            "./imagenes/productos/parlantes portatiles/3/jbl-partybox-710-2.webp"
+        ]
+    }
+]
